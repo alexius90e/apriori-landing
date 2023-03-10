@@ -1,0 +1,28 @@
+@font-face {
+  font-family: 'Myriad Pro';
+  src: url('../../fonts/myriadpro-regular.otf');
+}
+
+@font-face {
+  font-family: 'Arkhip';
+  src: url('../../fonts/arkhip-regular.ttf');
+}
+
+html {
+  font-size: 1rem;
+  font-family: 'Myriad Pro', 'Segoe UI', Tahoma, Verdana, sans-serif;
+  color: $black;
+}
+
+body {
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Arkhip', 'Segoe UI', Tahoma, Verdana, sans-serif;
+}
