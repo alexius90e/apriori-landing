@@ -29,10 +29,10 @@
   }
 
   &:hover {
-    box-shadow: 0.3125rem 0.3125rem 0.625rem rgba($color: $brown, $alpha: 0.5);
+    box-shadow: 5px 5px 1.25rem rgba($color: $brown, $alpha: 0.5);
 
     @include tablet {
-      box-shadow: 0.3125rem 0.3125rem 0.625rem rgba($color: $black, $alpha: 0.19);
+      box-shadow: 0.3125rem 0.3125rem 1.25rem rgba($color: $black, $alpha: 0.19);
     }
   }
 

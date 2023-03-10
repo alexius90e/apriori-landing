@@ -1,4 +1,17 @@
 .container {
   max-width: 80.625rem;
   margin: 0 auto;
+  padding: 0 5%;
+
+  @include tablet {
+    padding: 0 3rem;
+  }
+
+  @include iphone {
+    padding: 0 1.875rem;
+  }
+
+  @include mobile {
+    padding: 0 1.25rem;
+  }
 }

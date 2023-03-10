@@ -1,26 +1,22 @@
 .header {
   background-color: $lightBeige;
+  border-bottom: 1px solid rgba($color: $brown, $alpha: 0.15);
 
   & .container {
     display: flex;
     align-items: center;
-    padding: 1.5rem 5%;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
 
     @include laptop {
-      padding: 1.25rem 5%;
+      padding-top: 1.25rem;
+      padding-bottom: 1.25rem;
     }
 
     @include tablet {
       flex-wrap: wrap;
-      padding: 0.9375rem 3rem;
-    }
-
-    @include iphone {
-      padding: 0.9375rem 1.875rem;
-    }
-
-    @include mobile {
-      padding: 0.9375rem 1.25rem;
+      padding-top: 0.9375rem;
+      padding-bottom: 0.9375rem;
     }
   }
 
