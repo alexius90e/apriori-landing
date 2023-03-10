@@ -1,0 +1,113 @@
+.header {
+  background-color: $lightBeige;
+
+  & .container {
+    display: flex;
+    align-items: center;
+    padding: 1.5rem 5%;
+
+    @include laptop {
+      padding: 1.25rem 5%;
+    }
+
+    @include tablet {
+      flex-wrap: wrap;
+      padding: 0.9375rem 3rem;
+    }
+
+    @include iphone {
+      padding: 0.9375rem 1.875rem;
+    }
+
+    @include mobile {
+      padding: 0.9375rem 1.25rem;
+    }
+  }
+
+  &-nav {
+    flex: 1 0 calc(100% / 3);
+    order: 0;
+
+    @include tablet {
+      display: none;
+      order: 2;
+    }
+
+    & ul {
+      display: flex;
+      justify-content: space-between;
+      gap: 2%;
+      margin: 0;
+      padding: 0;
+
+      & li {
+        list-style-type: none;
+
+        & a {
+          display: block;
+          width: max-content;
+          font-weight: 400;
+          font-size: 1rem;
+          line-height: 1.1875rem;
+          color: $black;
+          text-decoration: none;
+
+          @include laptop {
+            font-size: 0.875rem;
+            line-height: 1.0625rem;
+          }
+
+          @include tablet {
+            font-size: 1rem;
+            line-height: 1.1875rem;
+          }
+        }
+      }
+    }
+  }
+
+  & .logo {
+    flex: 1 1 calc(100% / 3);
+    display: flex;
+    justify-content: center;
+    padding: 0 3%;
+    order: 1;
+
+    @include laptop {
+      justify-content: flex-start;
+      padding: 0 3rem;
+    }
+
+    @include tablet {
+      padding: 0;
+      order: 0;
+    }
+  }
+
+  &-button-wrap {
+    flex: 1 1 calc(100% / 3);
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 30px;
+    order: 2;
+
+    @include tablet {
+      order: 1;
+    }
+
+    & .button {
+      @include iphone {
+        display: none;
+      }
+    }
+
+    & .button-burger {
+      display: none;
+
+      @include tablet {
+        display: inline-block;
+      }
+    }
+  }
+}
