@@ -4,6 +4,10 @@
 @import './base/reset';
 @import './base/mixins';
 
+// Libs
+
+@import './libs/swiper';
+
 // Modules
 
 @import './modules/container';
@@ -15,3 +19,4 @@
 
 @import './layouts/header';
 @import './layouts/sub-menu';
+@import './layouts/banner';

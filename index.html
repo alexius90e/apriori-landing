@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="./css/index.css" />
   </head>
   <body>
+    <script src="./js/index.js" type="module" defer></script>
+
     <header class="header">
       <div class="container">
         <nav class="header-nav">
@@ -29,6 +31,7 @@
         </div>
       </div>
     </header>
+
     <nav class="sub-menu">
       <div class="container">
         <ul>
@@ -41,5 +44,20 @@
         </ul>
       </div>
     </nav>
+
+    <main>
+      <section class="banner">
+        <div class="swiper" id="bannerSwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="./assets/banner/banner-1.jpg" alt="banner" /></div>
+            <div class="swiper-slide"><img src="./assets/banner/banner-2.jpg" alt="banner" /></div>
+          </div>
+        </div>
+        <div>
+          <div class="banner-button banner-button-prev"></div>
+          <div class="banner-button banner-button-next"></div>
+        </div>
+      </section>
+    </main>
   </body>
 </html>
