@@ -28,6 +28,56 @@ h6 {
   font-family: 'Arkhip', 'Segoe UI', Tahoma, Verdana, sans-serif;
 }
 
+h2 {
+  font-weight: 400;
+  font-size: 5rem;
+  line-height: 5.625rem;
+  color: $brown;
+  text-align: center;
+  text-transform: uppercase;
+
+  @include laptop {
+    font-size: 3.125rem;
+    line-height: 3.75rem;
+  }
+
+  @include tablet {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+  }
+
+  @include iphone {
+    font-size: 1.625rem;
+    line-height: 1.875rem;
+  }
+}
+
+h3 {
+  margin: 0 4.375rem;
+  font-weight: 400;
+  font-size: 1.75rem;
+  line-height: 2.125rem;
+  color: $black;
+  text-align: center;
+  text-transform: uppercase;
+
+  @include laptop {
+    margin: 0 3.125rem;
+    font-size: 1.5rem;
+    line-height: 1.8125rem;
+  }
+
+  @include tablet {
+    margin: 0 2.5rem;
+  }
+
+  @include iphone {
+    margin: 0 1.875rem;
+    font-size: 1.25rem;
+    line-height: 1.5rem;
+  }
+}
+
 figure {
   margin: 0;
   padding: 0;
