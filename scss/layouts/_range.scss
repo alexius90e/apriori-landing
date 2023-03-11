@@ -1,6 +1,25 @@
 .range {
+  padding: 7.5rem 0 0;
+  background: linear-gradient(
+    180deg,
+    $lightBeige 0%,
+    $lightBeige 3.125rem,
+    $darkBeige 12.5rem,
+    $darkBeige calc(100% - 12.5rem),
+    $lightBeige calc(100% - 3.125rem),
+    $lightBeige 100%
+  );
+
+  @include laptop {
+    padding: 6.25rem 0 0;
+  }
+
+  @include tablet {
+    padding: 5rem 0 0;
+  }
+
   &::after {
-    @include afterSection;
+    @include sectionPseudoElement;
   }
 
   & .container {

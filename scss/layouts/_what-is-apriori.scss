@@ -1,6 +1,6 @@
 .what-is-apriori {
   &::after {
-    @include afterSection;
+    @include sectionPseudoElement;
   }
 
   &__title {

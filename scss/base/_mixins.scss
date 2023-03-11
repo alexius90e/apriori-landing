@@ -22,7 +22,7 @@
   }
 }
 
-@mixin afterSection {
+@mixin sectionPseudoElement {
   content: '';
   display: block;
   margin: 6.25rem 0;

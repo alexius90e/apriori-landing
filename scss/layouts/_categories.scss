@@ -1,0 +1,15 @@
+.categories {
+  background: linear-gradient(
+    180deg,
+    $lightBeige 0%,
+    $lightBeige 5%,
+    $darkBeige 10%,
+    $darkBeige 90%,
+    $lightBeige 95%,
+    $lightBeige 100%
+  );
+
+  &::before {
+    @include sectionPseudoElement
+  }
+}
