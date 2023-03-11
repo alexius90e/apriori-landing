@@ -836,8 +836,18 @@ swiper-container:not(.swiper-watch-progress) .swiper-lazy-preloader,
 }
 
 .header {
+  position: relative;
   background-color: #fcebcc;
   border-bottom: 1px solid rgba(74, 52, 45, 0.15);
+}
+@media (max-width: 48rem) {
+  .header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 50;
+  }
 }
 .header .container {
   display: -webkit-box;
@@ -873,10 +883,23 @@ swiper-container:not(.swiper-watch-progress) .swiper-lazy-preloader,
 }
 @media (max-width: 48rem) {
   .header-nav {
+    position: absolute;
+    z-index: 50;
+    top: 100%;
+    left: 0;
+    right: 0;
     display: none;
     -webkit-box-ordinal-group: 3;
         -ms-flex-order: 2;
             order: 2;
+    width: 100%;
+    background-color: #f1ddac;
+    border-bottom: 1px solid rgba(74, 52, 45, 0.5);
+  }
+}
+@media (max-width: 48rem) {
+  .header-nav.visible {
+    display: block;
   }
 }
 .header-nav ul {
@@ -890,8 +913,27 @@ swiper-container:not(.swiper-watch-progress) .swiper-lazy-preloader,
   margin: 0;
   padding: 0;
 }
+@media (max-width: 48rem) {
+  .header-nav ul {
+    display: block;
+    max-width: 320px;
+    padding: 40px 0;
+    margin: 0 auto;
+  }
+}
+@media (max-width: 30rem) {
+  .header-nav ul {
+    padding: 30px 0;
+  }
+}
 .header-nav ul li {
   list-style-type: none;
+}
+@media (max-width: 48rem) {
+  .header-nav ul li {
+    margin-bottom: 20px;
+    text-align: center;
+  }
 }
 .header-nav ul li a {
   display: block;
@@ -912,6 +954,7 @@ swiper-container:not(.swiper-watch-progress) .swiper-lazy-preloader,
 }
 @media (max-width: 48rem) {
   .header-nav ul li a {
+    width: 100%;
     font-size: 1rem;
     line-height: 1.1875rem;
   }
@@ -983,6 +1026,16 @@ swiper-container:not(.swiper-watch-progress) .swiper-lazy-preloader,
 @media (max-width: 48rem) {
   .header-button-wrap .button-burger {
     display: inline-block;
+  }
+}
+
+ul.header-nav__submenu {
+  display: none;
+}
+@media (max-width: 48rem) {
+  ul.header-nav__submenu {
+    display: block;
+    border-top: 1px solid rgba(74, 52, 45, 0.19);
   }
 }
 

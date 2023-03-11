@@ -69,3 +69,15 @@ new Swiper('#deluxe .category-items', {
   },
 });
 
+const menu = document.querySelector('.header-nav');
+
+const menuToggler = document.querySelector('.menu-toggler');
+
+menu.addEventListener('click', (e) => {
+  const isLink = e.target.classList.contains('header-nav__link');
+  if (isLink) e.currentTarget.classList.remove('visible');
+});
+
+menuToggler.addEventListener('click', () => {
+  menu.classList.toggle('visible');
+});
