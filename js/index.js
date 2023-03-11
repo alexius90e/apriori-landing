@@ -30,15 +30,15 @@ const categorySwiperOptions = {
   spaceBetween: 10,
 };
 
-const swiperCategoryThumbs1 = new Swiper('#category1 .category-thumbs', categorySwiperthumbsOptions);
+const swiperClassicThumbs1 = new Swiper('#classic .category-thumbs', categorySwiperthumbsOptions);
 
-new Swiper('#category1 .category-items', {
+new Swiper('#classic .category-items', {
   ...categorySwiperOptions,
   navigation: {
-    nextEl: '#category1 .swiper-button-next',
-    prevEl: '#category1 .swiper-button-prev',
+    nextEl: '#classic .swiper-button-next',
+    prevEl: '#classic .swiper-button-prev',
   },
   thumbs: {
-    swiper: swiperCategoryThumbs1,
+    swiper: swiperClassicThumbs1,
   },
 });
