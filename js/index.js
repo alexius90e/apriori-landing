@@ -56,3 +56,16 @@ new Swiper('#wellness .category-items', {
   },
 });
 
+const swiperClassicThumbs3 = new Swiper('#deluxe .category-thumbs', categorySwiperthumbsOptions);
+
+new Swiper('#deluxe .category-items', {
+  ...categorySwiperOptions,
+  navigation: {
+    nextEl: '#deluxe .swiper-button-next',
+    prevEl: '#deluxe .swiper-button-prev',
+  },
+  thumbs: {
+    swiper: swiperClassicThumbs3,
+  },
+});
+
