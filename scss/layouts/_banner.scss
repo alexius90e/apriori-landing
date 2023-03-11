@@ -1,6 +1,14 @@
 .banner {
   position: relative;
 
+  @include tablet {
+    margin-top: 4.5625rem;
+  }
+
+  @include iphone {
+    margin-top: 60px;
+  }
+
   &-button {
     position: absolute;
     top: 50%;

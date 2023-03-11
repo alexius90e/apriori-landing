@@ -81,3 +81,18 @@ menu.addEventListener('click', (e) => {
 menuToggler.addEventListener('click', () => {
   menu.classList.toggle('visible');
 });
+
+const modal = document.querySelector('.modal');
+
+document.body.addEventListener('click', (e) => {
+  const isBuyButton = e.target.classList.contains('button-buy');
+  if (isBuyButton) modal.classList.add('visible');
+});
+
+modal.addEventListener('click', (e) => {
+  const target = e.target;
+  const isCloseButton = target.classList.contains('modal-close');
+  // const isLink = target.parentNode.classList.contains('modal-link');
+  const isOverlay = target.classList.contains('modal-overlay');
+  if (isCloseButton || isOverlay) e.currentTarget.classList.remove('visible');
+});
