@@ -42,3 +42,17 @@ new Swiper('#classic .category-items', {
     swiper: swiperClassicThumbs1,
   },
 });
+
+const swiperClassicThumbs2 = new Swiper('#wellness .category-thumbs', categorySwiperthumbsOptions);
+
+new Swiper('#wellness .category-items', {
+  ...categorySwiperOptions,
+  navigation: {
+    nextEl: '#wellness .swiper-button-next',
+    prevEl: '#wellness .swiper-button-prev',
+  },
+  thumbs: {
+    swiper: swiperClassicThumbs2,
+  },
+});
+

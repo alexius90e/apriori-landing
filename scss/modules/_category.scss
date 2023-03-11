@@ -1,5 +1,22 @@
 .category {
   position: relative;
+  margin: 0 0 12.5rem;
+
+  @include laptop {
+    margin: 0 0 10rem;
+  }
+
+  @include tablet {
+    margin: 0 0 8.125rem;
+  }
+
+  @include iphone {
+    margin: 0 0 6.25rem;
+  }
+
+  @include mobile {
+    margin: 0 0 5rem;
+  }
 
   & .swiper-button-prev,
   & .swiper-button-next {
@@ -191,8 +208,6 @@
   }
 
   &-thumbs {
-    margin: 0 0 12.5rem;
-
     & .swiper {
       &-slide {
         height: 9.25rem;
