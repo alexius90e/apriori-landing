@@ -1,0 +1,136 @@
+.footer {
+  padding: 30px 0 40px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  border: 1px solid rgba($color: $brown, $alpha: 0.19);
+
+  & .container {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+
+    @include tablet {
+      flex-wrap: wrap;
+      justify-content: flex-end;
+    }
+  }
+
+  & .logo {
+    @include tablet {
+      flex: 1 1 calc(40% - 40px);
+    }
+
+    @include iphone {
+      flex: 1 1 100%;
+      text-align: center;
+    }
+  }
+
+  &-nav {
+    flex: 0 1 300px;
+
+    @include laptop {
+      flex: 0 0 auto;
+    }
+
+    @include tablet {
+      flex: 1 0 calc(60%);
+    }
+
+    @include iphone {
+      flex: 1 1 100%;
+    }
+
+    & ul {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px 50px;
+      margin: 0;
+      padding: 0;
+      max-width: max-content;
+
+      @include laptop {
+        flex-direction: column;
+      }
+
+      @include tablet {
+        flex-direction: row;
+        gap: 16px;
+      }
+
+      @include iphone {
+        flex: 1 1 100%;
+        justify-content: center;
+        gap: 16px;
+        max-width: none;
+      }
+
+      & li {
+        flex: 1 1 calc(50% - 25px);
+        list-style-type: none;
+
+        @include laptop {
+          flex: 1 0 100%;
+          max-width: max-content;
+        }
+
+        @include tablet {
+          flex: 1 1 calc(50% - 25px);
+        }
+
+        @include iphone {
+          flex: 1 0 auto;
+          max-width: none;
+          max-width: fit-content;
+        }
+
+        & a {
+          color: #231815;
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 19px;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+
+  &-form {
+    display: flex;
+    flex-direction: column;
+
+    @include tablet {
+      flex: 0 1 calc(60% - 20px);
+    }
+
+    @include iphone {
+      flex: 1 0 100%;
+      display: block;
+    }
+
+    & p {
+      margin-top: 0;
+    }
+
+    & fieldset {
+      display: flex;
+      gap: 1rem;
+
+      @include iphone {
+        flex-wrap: wrap;
+      }
+
+      & input,
+      & button {
+        @include tablet {
+          box-sizing: border-box;
+        }
+
+        @include iphone {
+          flex: 1 0 100%;
+        }
+      }
+    }
+  }
+}
