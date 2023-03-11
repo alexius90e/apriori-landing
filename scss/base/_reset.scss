@@ -99,3 +99,32 @@ figure {
   margin: 0;
   padding: 0;
 }
+
+input,
+textarea {
+  padding: 0.9375rem 1.25rem;
+  font-family: 'Myriad Pro', 'Segoe UI', Tahoma, Verdana, sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.25rem;
+  color: $inputColor;
+  background: none;
+  border: 0.0625rem solid $inputBorderColor;
+  border-radius: 0.3125rem;
+  outline-color: $inputBorderColor;
+
+  @include iphone {
+    font-size: 0.9375rem;
+    line-height: 1.125rem;
+  }
+
+  &::placeholder {
+    color: $inputColor;
+  }
+}
+
+fieldset {
+  padding: 0;
+  margin: 0;
+  border: none;
+}

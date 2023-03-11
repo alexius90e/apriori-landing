@@ -5,92 +5,92 @@
   & .swiper-button-next {
     position: absolute;
     z-index: 10;
-    top: calc(450px / 2 + 105px);
-    height: 30px;
-    width: 30px;
+    top: calc(28.125rem / 2 + 6.5625rem);
+    height: 1.875rem;
+    width: 1.875rem;
     background: url('/assets/icons/icon_arrow_brown.png') center no-repeat;
     background-size: cover;
 
     @include laptop {
-      top: calc(300px / 2 + 80px);
+      top: calc(18.75rem / 2 + 5rem);
     }
 
     @include tablet {
-      top: calc(250px / 2 + 70px);
+      top: calc(15.625rem / 2 + 4.375rem);
     }
 
     @include iphone {
       top: auto;
-      bottom: calc(220px / 2 + 80px);
+      bottom: calc(13.75rem / 2 + 5rem);
     }
 
     @include mobile {
-      height: 20px;
-      width: 20px;
+      height: 1.25rem;
+      width: 1.25rem;
     }
   }
 
   & .swiper-button-prev {
-    left: -45px;
+    left: -2.8125rem;
     transform: translateY(-50%);
 
     @include laptop {
-      left: -40px;
+      left: -2.5rem;
     }
 
     @include tablet {
-      left: -35px;
+      left: -2.1875rem;
     }
 
     @include iphone {
       transform: translateY(50%);
-      left: -30px;
+      left: -1.875rem;
     }
 
     @include mobile {
-      left: -20px;
+      left: -1.25rem;
     }
   }
 
   & .swiper-button-next {
-    right: -45px;
+    right: -2.8125rem;
     transform: translateY(-50%) rotate(180deg);
 
     @include laptop {
-      right: -40px;
+      right: -2.5rem;
     }
 
     @include tablet {
-      right: -35px;
+      right: -2.1875rem;
     }
 
     @include iphone {
-      right: -30px;
+      right: -1.875rem;
       transform: translateY(50%) rotate(180deg);
     }
 
     @include mobile {
-      right: -20px;
+      right: -1.25rem;
     }
   }
 
   &-items {
-    margin: 0 0 60px;
+    margin: 0 0 3.75rem;
 
     @include laptop {
-      margin: 0 0 40px;
+      margin: 0 0 2.5rem;
     }
 
     @include iphone {
-      margin: 0 0 20px;
+      margin: 0 0 1.25rem;
     }
 
     &-slide {
       display: flex;
-      gap: 140px;
+      gap: 8.75rem;
 
       @include laptop {
-        gap: 30px;
+        gap: 1.875rem;
       }
 
       @include iphone {
@@ -106,110 +106,110 @@
       }
 
       &__title {
-        margin: 90px 0 0;
+        margin: 5.625rem 0 0;
         font-family: 'Myriad Pro', 'Segoe UI', Tahoma, Verdana, sans-serif;
         font-weight: 400;
-        font-size: 28px;
-        line-height: 34px;
+        font-size: 1.75rem;
+        line-height: 2.125rem;
 
         @include laptop {
-          margin: 40px 0 0;
-          font-size: 24px;
-          line-height: 29px;
+          margin: 2.5rem 0 0;
+          font-size: 1.5rem;
+          line-height: 1.8125rem;
         }
 
         @include tablet {
           margin: 0;
-          font-size: 20px;
-          line-height: 24px;
+          font-size: 1.25rem;
+          line-height: 1.5rem;
         }
 
         @include iphone {
-          font-size: 18px;
-          line-height: 22px;
+          font-size: 1.125rem;
+          line-height: 1.375rem;
         }
       }
 
       &__description {
-        margin: 20px 0 30px;
+        margin: 1.25rem 0 1.875rem;
         font-weight: 400;
-        font-size: 16px;
-        line-height: 19px;
+        font-size: 1rem;
+        line-height: 1.1875rem;
 
         @include laptop {
-          font-size: 15px;
-          line-height: 18px;
+          font-size: 0.9375rem;
+          line-height: 1.125rem;
         }
 
         @include tablet {
-          margin: 10px 0 20px;
+          margin: 0.625rem 0 1.25rem;
         }
 
         @include iphone {
-          margin: 10px 0 30px;
-          font-size: 14px;
-          line-height: 17px;
+          margin: 0.625rem 0 1.875rem;
+          font-size: 0.875rem;
+          line-height: 1.0625rem;
         }
 
         @include mobile {
-          margin: 15px 0 20px;
+          margin: 0.9375rem 0 1.25rem;
         }
       }
 
       &__image {
         position: relative;
         flex: 0 0 50%;
-        height: 450px;
+        height: 28.125rem;
 
         @include laptop {
-          height: 300px;
+          height: 18.75rem;
         }
 
         @include tablet {
-          height: 250px;
+          height: 15.625rem;
         }
 
         @include iphone {
           flex: 1 0 100%;
-          height: 220px;
+          height: 13.75rem;
         }
 
         & img {
           height: 100%;
           width: 100%;
           object-fit: cover;
-          border-radius: 5px;
+          border-radius: 0.3125rem;
         }
 
         & .button {
           position: absolute;
-          right: 20px;
-          bottom: 20px;
+          right: 1.25rem;
+          bottom: 1.25rem;
         }
       }
     }
   }
 
   &-thumbs {
-    margin: 0 0 200px;
+    margin: 0 0 12.5rem;
 
     & .swiper {
       &-slide {
-        height: 148px;
+        height: 9.25rem;
 
         @include laptop {
-          height: 85px;
+          height: 5.3125rem;
         }
 
         @include tablet {
-          height: 60px;
+          height: 3.75rem;
         }
 
         & img {
           height: 100%;
           width: 100%;
           object-fit: cover;
-          border-radius: 5px;
+          border-radius: 0.3125rem;
         }
 
         &-thumb-active img {

@@ -1,5 +1,5 @@
 .categories {
-  margin-bottom: 160px;
+  margin-bottom: 10rem;
   background: linear-gradient(
     180deg,
     $lightBeige 0%,
@@ -11,15 +11,15 @@
   );
 
   @include laptop {
-    margin-bottom: 120px;
+    margin-bottom: 7.5rem;
   }
 
   @include tablet {
-    margin-bottom: 100px;
+    margin-bottom: 6.25rem;
   }
 
   @include iphone {
-    margin-bottom: 80px;
+    margin-bottom: 5rem;
   }
 
   &::before {
