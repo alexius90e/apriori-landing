@@ -1,15 +1,37 @@
 .categories {
+  margin-bottom: 160px;
   background: linear-gradient(
     180deg,
     $lightBeige 0%,
-    $lightBeige 5%,
-    $darkBeige 10%,
-    $darkBeige 90%,
-    $lightBeige 95%,
+    $lightBeige 3.125rem,
+    $darkBeige 12.5rem,
+    $darkBeige calc(100% - 12.5rem),
+    $lightBeige calc(100% - 3.125rem),
     $lightBeige 100%
   );
 
+  @include laptop {
+    margin-bottom: 120px;
+  }
+
+  @include tablet {
+    margin-bottom: 100px;
+  }
+
+  @include iphone {
+    margin-bottom: 80px;
+  }
+
   &::before {
-    @include sectionPseudoElement
+    @include sectionPseudoElement;
+  }
+
+  &-video {
+    aspect-ratio: 16 / 9;
+
+    & iframe {
+      height: 100%;
+      width: 100%;
+    }
   }
 }

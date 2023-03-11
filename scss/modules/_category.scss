@@ -1,0 +1,221 @@
+.category {
+  position: relative;
+
+  & .swiper-button-prev,
+  & .swiper-button-next {
+    position: absolute;
+    z-index: 10;
+    top: calc(450px / 2 + 105px);
+    height: 30px;
+    width: 30px;
+    background: url('/assets/icons/icon_arrow_brown.png') center no-repeat;
+    background-size: cover;
+
+    @include laptop {
+      top: calc(300px / 2 + 80px);
+    }
+
+    @include tablet {
+      top: calc(250px / 2 + 70px);
+    }
+
+    @include iphone {
+      top: auto;
+      bottom: calc(220px / 2 + 80px);
+    }
+
+    @include mobile {
+      height: 20px;
+      width: 20px;
+    }
+  }
+
+  & .swiper-button-prev {
+    left: -45px;
+    transform: translateY(-50%);
+
+    @include laptop {
+      left: -40px;
+    }
+
+    @include tablet {
+      left: -35px;
+    }
+
+    @include iphone {
+      transform: translateY(50%);
+      left: -30px;
+    }
+
+    @include mobile {
+      left: -20px;
+    }
+  }
+
+  & .swiper-button-next {
+    right: -45px;
+    transform: translateY(-50%) rotate(180deg);
+
+    @include laptop {
+      right: -40px;
+    }
+
+    @include tablet {
+      right: -35px;
+    }
+
+    @include iphone {
+      right: -30px;
+      transform: translateY(50%) rotate(180deg);
+    }
+
+    @include mobile {
+      right: -20px;
+    }
+  }
+
+  &-items {
+    margin: 0 0 60px;
+
+    @include laptop {
+      margin: 0 0 40px;
+    }
+
+    @include iphone {
+      margin: 0 0 20px;
+    }
+
+    &-slide {
+      display: flex;
+      gap: 140px;
+
+      @include laptop {
+        gap: 30px;
+      }
+
+      @include iphone {
+        flex-wrap: wrap;
+      }
+
+      &__info {
+        flex: 1 1 auto;
+
+        @include iphone {
+          flex: 1 0 100%;
+        }
+      }
+
+      &__title {
+        margin: 90px 0 0;
+        font-family: 'Myriad Pro', 'Segoe UI', Tahoma, Verdana, sans-serif;
+        font-weight: 400;
+        font-size: 28px;
+        line-height: 34px;
+
+        @include laptop {
+          margin: 40px 0 0;
+          font-size: 24px;
+          line-height: 29px;
+        }
+
+        @include tablet {
+          margin: 0;
+          font-size: 20px;
+          line-height: 24px;
+        }
+
+        @include iphone {
+          font-size: 18px;
+          line-height: 22px;
+        }
+      }
+
+      &__description {
+        margin: 20px 0 30px;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 19px;
+
+        @include laptop {
+          font-size: 15px;
+          line-height: 18px;
+        }
+
+        @include tablet {
+          margin: 10px 0 20px;
+        }
+
+        @include iphone {
+          margin: 10px 0 30px;
+          font-size: 14px;
+          line-height: 17px;
+        }
+
+        @include mobile {
+          margin: 15px 0 20px;
+        }
+      }
+
+      &__image {
+        position: relative;
+        flex: 0 0 50%;
+        height: 450px;
+
+        @include laptop {
+          height: 300px;
+        }
+
+        @include tablet {
+          height: 250px;
+        }
+
+        @include iphone {
+          flex: 1 0 100%;
+          height: 220px;
+        }
+
+        & img {
+          height: 100%;
+          width: 100%;
+          object-fit: cover;
+          border-radius: 5px;
+        }
+
+        & .button {
+          position: absolute;
+          right: 20px;
+          bottom: 20px;
+        }
+      }
+    }
+  }
+
+  &-thumbs {
+    margin: 0 0 200px;
+
+    & .swiper {
+      &-slide {
+        height: 148px;
+
+        @include laptop {
+          height: 85px;
+        }
+
+        @include tablet {
+          height: 60px;
+        }
+
+        & img {
+          height: 100%;
+          width: 100%;
+          object-fit: cover;
+          border-radius: 5px;
+        }
+
+        &-thumb-active img {
+          filter: brightness(70%);
+        }
+      }
+    }
+  }
+}

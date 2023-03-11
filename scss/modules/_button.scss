@@ -35,6 +35,15 @@
     background: linear-gradient(180deg, $buttonDarkBeige 0%, $buttonLightBeige 100%);
   }
 
+  &_dark {
+    color: $white;
+    background: linear-gradient(180deg, $buttonLightBrown 0%, $buttonDarkBrown 100%);
+
+    &:active {
+      background: linear-gradient(180deg, $buttonDarkBrown 0%, $buttonLightBrown 100%);
+    }
+  }
+
   &_shadow {
     box-shadow: 0.625rem 0.625rem 1.25rem rgba($color: $brown, $alpha: 0.5);
 
