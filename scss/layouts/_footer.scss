@@ -71,12 +71,13 @@
         list-style-type: none;
 
         @include laptop {
-          flex: 1 0 100%;
+          flex: 1 1 calc(50% - 25px);
           max-width: max-content;
         }
 
         @include tablet {
-          flex: 1 1 calc(50% - 25px);
+          flex: 0 1 calc(50% - 25px);
+          max-width: 100%;
         }
 
         @include iphone {

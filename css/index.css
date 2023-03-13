@@ -106,6 +106,10 @@ figure {
   padding: 0;
 }
 
+button {
+  font-family: "Myriad Pro", "Segoe UI", Tahoma, Verdana, sans-serif;
+}
+
 input,
 textarea {
   padding: 0.9375rem 1.25rem;
@@ -1150,7 +1154,7 @@ swiper-container:not(.swiper-watch-progress) .swiper-lazy-preloader,
             order: 1;
   }
 }
-@media (max-width: 30rem) {
+@media (max-width: 22.5rem) {
   .header-button-wrap .button {
     display: none;
   }
@@ -1519,6 +1523,7 @@ ul.header-nav__submenu {
   font-size: 1.125rem;
   line-height: 1.375rem;
   color: #967f4d;
+  text-decoration: none;
   background: none;
   border: none;
   border-bottom: 0.1875rem dotted #967f4d;
@@ -2031,8 +2036,8 @@ ul.header-nav__submenu {
 @media (max-width: 64rem) {
   .footer-nav ul li {
     -webkit-box-flex: 1;
-        -ms-flex: 1 0 100%;
-            flex: 1 0 100%;
+        -ms-flex: 1 1 calc(50% - 25px);
+            flex: 1 1 calc(50% - 25px);
     max-width: -webkit-max-content;
     max-width: -moz-max-content;
     max-width: max-content;
@@ -2040,9 +2045,10 @@ ul.header-nav__submenu {
 }
 @media (max-width: 48rem) {
   .footer-nav ul li {
-    -webkit-box-flex: 1;
-        -ms-flex: 1 1 calc(50% - 25px);
-            flex: 1 1 calc(50% - 25px);
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 calc(50% - 25px);
+            flex: 0 1 calc(50% - 25px);
+    max-width: 100%;
   }
 }
 @media (max-width: 30rem) {

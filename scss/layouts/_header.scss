@@ -133,7 +133,7 @@
     }
 
     & .button {
-      @include iphone {
+      @include mobile {
         display: none;
       }
     }
