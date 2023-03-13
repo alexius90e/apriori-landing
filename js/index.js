@@ -10,7 +10,7 @@ new Swiper('#bannerSwiper', {
 
 const categorySwiperthumbsOptions = {
   loop: true,
-  spaceBetween: 30,
+  spaceBetween: 20,
   slidesPerView: 4,
   freeMode: true,
   watchSlidesProgress: true,
@@ -18,6 +18,7 @@ const categorySwiperthumbsOptions = {
   breakpoints: {
     480: {
       slidesPerView: 5,
+      spaceBetween: 30,
     },
     768: {
       slidesPerView: 6,
